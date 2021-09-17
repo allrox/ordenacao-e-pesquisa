@@ -36,21 +36,28 @@ void insertionSort(int vet[], int tam){
 
     int valueInsert, posInsert, i;
 
-    for (i = 1 ; i < tam ; i++){
+    for (i = 0 ; i < tam ; i++){
         valueInsert = vet[i];
         posInsert = i;
     }
 
-    while (posInsert > 0 && vet[posInsert - 1] > valueInsert){
+    while (posInsert > 0 && vet[i - 1] > valueInsert){
         vet[posInsert] = vet[posInsert - 1];
         posInsert--;
+        imprimirVetor(vet,5);
     }
+    
+//    while (posInsert > 0 && vet[posInsert - 1] > valueInsert){
+//        vet[posInsert] = vet[posInsert - 1];
+//        posInsert--;
+//        imprimirVetor(vet,5);
+//    }
 
 }
 
 void imprimirVetor(int vet[], int tam){
     int i;
-    cout<<vet[0];
+//    cout<<vet[0];
     for (i=1 ; i<5 ; i++){
         cout<<", "<<vet[i];
     }
