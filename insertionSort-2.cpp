@@ -14,8 +14,12 @@ int main (){
     int notas[ELEM];
     int temp;
     
+    cout<<"Esta aplicação recebe e ordena elementos de forma crescente"<<endl; 
+	cout<<"em um vetor utilizando o método Insertion Sort"<<endl<<endl;
+	
     cout<<"Quantos elementos deseja ordenar? ";
     cin>>ELEM;
+    cout<<"\n";
       
     //Preenchendo o vetor com os elementos informados pelo usuário
     for (int i=0 ; i<ELEM ; i++){
@@ -43,12 +47,12 @@ int main (){
 
 
 	//Loop que imprime o vetor ordenado pelo método Insertion Sort
-	cout<<"\n{ ";
+	cout<<"\nAqui está o seu vetor de "<<ELEM<<" elementos ordenados { ";
     for (int i=0; i<ELEM ; i++){
     	if(i<(ELEM-1)){
 			cout<<notas[i]<<", ";
 		} else {
-			cout<<notas[i]<<" }"<<endl;
+			cout<<notas[i]<<" }"<<endl<<endl;
 		}
     }
 
