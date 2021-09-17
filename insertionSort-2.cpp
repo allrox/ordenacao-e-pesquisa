@@ -28,7 +28,7 @@ int main (){
     for (int i=0 ; i<ELEM ; i++){
 
 		//Loop que controla a comparação entre os índices do vetor
-        for (int j = i+1; j>0 ; j--){
+        for (int j = ELEM-1; j>0 ; j--){
         	
 			//Aqui é realizado o swap entre o conteúdo dos índices "j"
 			//utilizando a variável temporária
@@ -40,6 +40,7 @@ int main (){
 
         }
     }
+
 
 	//Loop que imprime o vetor ordenado pelo método Insertion Sort
 	cout<<"\n{ ";
